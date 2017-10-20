@@ -4,6 +4,7 @@ $i = 1;
 $cfg['Servers'][$i]['AllowRoot'] = false;
 $cfg['Servers'][$i]['auth_type'] = 'cookie';
 $cfg['Servers'][$i]['ssl'] = true;
+$cfg['Servers'][$i]['ssl_verify'] = true;
 $cfg['Servers'][$i]['host'] = trim(getenv('PMA_HOST'));
 $cfg['Servers'][$i]['pmadb'] = trim(getenv('PMA_CONTROL_DB'));
 $cfg['Servers'][$i]['controluser'] = trim(getenv('PMA_CONTROL_USER'));
